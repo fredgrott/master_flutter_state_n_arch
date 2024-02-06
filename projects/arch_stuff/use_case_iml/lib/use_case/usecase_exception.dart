@@ -50,7 +50,7 @@ class InvalidPreconditionsException extends UsecaseException {
 /// [InvalidPostconditionsException] is threw when the postconditions of a
 /// Usecase are not met.
 class InvalidPostconditionsException extends UsecaseException {
-  /// {@macro invalid_postconditions_exception}
+  /// 
   const InvalidPostconditionsException([super.message]);
 
   @override
@@ -59,7 +59,7 @@ class InvalidPostconditionsException extends UsecaseException {
 
 /// [StreamUsecaseException] is sometimes threw by Stream Usecases operations.
 class StreamUsecaseException extends UsecaseException {
-  /// {@macro stream_usecase_exception}
+  /// 
   const StreamUsecaseException([super.message]);
 
   @override

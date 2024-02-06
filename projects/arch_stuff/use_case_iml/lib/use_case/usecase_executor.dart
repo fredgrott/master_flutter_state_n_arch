@@ -58,7 +58,7 @@ mixin UsecaseExecutor<Input, Output> on ConditionsObserver<Input, Output> {
 }
 
 mixin UsecaseStreamExecutor<Input, Output> on ConditionsObserver<Input, Output> {
-  /// {@macro execute_with_conditions}
+  /// 
   Stream<Output> executeWithConditions(
     Input? params, {
     required Stream<Output> Function() executor,

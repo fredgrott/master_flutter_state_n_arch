@@ -50,10 +50,9 @@ abstract class Usecase<Input, Output> extends _Usecase<Input, Output> with Useca
       );
 }
 
-/// {@template no_params_usecase}
+
 /// A usecase that does not require any params, but returns a result of type
 /// [Output].
-/// {@endtemplate}
 abstract class NoParamsUsecase<Output> extends _Usecase<void, Output> with UsecaseExecutor<void, Output> {
   /// {@macro no_params_usecase}
   const NoParamsUsecase() : super._();
@@ -72,12 +71,11 @@ abstract class NoParamsUsecase<Output> extends _Usecase<void, Output> with Useca
       );
 }
 
-/// {@template stream_usecase}
+
 /// A stream usecase that requires params of type [Input] and returns a
 /// stream of [Output].
-/// {@endtemplate}
 abstract class StreamUsecase<Input, Output> extends _Usecase<Input, Output> with UsecaseStreamExecutor<Input, Output> {
-  /// {@macro stream_usecase}
+  /// 
   const StreamUsecase() : super._();
 
   /// This method is called before the execution of the usecase.
@@ -107,10 +105,9 @@ abstract class StreamUsecase<Input, Output> extends _Usecase<Input, Output> with
   }
 }
 
-/// {@template no_params_stream_usecase}
+
 /// A stream usecase that does not require any params, but returns a
 /// stream of [Output].
-/// {@endtemplate}
 abstract class NoParamsStreamUsecase<Output> extends _Usecase<void, Output> with UsecaseStreamExecutor<void, Output> {
   /// {@macro no_params_stream_usecase}
   const NoParamsStreamUsecase() : super._();
